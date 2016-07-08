@@ -1,0 +1,12 @@
+group 'com.greenviper.kwn.mongo'
+version '1.0-SNAPSHOT'
+
+apply plugin: "spring-boot"
+apply plugin: 'java'
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    compile "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
